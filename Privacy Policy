@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso de Privacidad — Carga Clara</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green-dark: #085041; --green-mid: #1D9E75; --green-light: #9FE1CB;
+      --green-pale: #E1F5EE; --gray-dark: #2C2C2A; --gray-mid: #5F5E5A; --white: #ffffff;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.75; color: var(--gray-dark); background: var(--white); }
+    header { background: var(--green-dark); padding: 48px 24px 40px; text-align: center; }
+    .logo-mark { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: var(--green-mid); border-radius: 14px; margin-bottom: 16px; }
+    .logo-mark svg { width: 32px; height: 32px; }
+    header h1 { font-size: 2rem; font-weight: 600; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    header h1 span { color: var(--green-light); }
+    header p.subtitle { font-size: 0.875rem; color: var(--green-light); opacity: 0.8; }
+    nav { background: var(--green-pale); border-bottom: 1px solid var(--green-light); padding: 20px 24px; }
+    .toc-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--green-dark); margin-bottom: 10px; }
+    nav ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 0; }
+    nav ol li a { font-size: 0.8rem; color: var(--green-dark); text-decoration: none; opacity: 0.75; }
+    nav ol li a:hover { opacity: 1; text-decoration: underline; }
+    .lang-bar { max-width: 780px; margin: 0 auto; border-bottom: 2px solid var(--green-light); padding: 0 24px; display: flex; }
+    .lang-tab { padding: 12px 20px; font-size: 0.85rem; font-weight: 600; color: var(--gray-mid); cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; text-decoration: none; }
+    .lang-tab.active { color: var(--green-dark); border-bottom-color: var(--green-mid); }
+    main { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    section { margin-bottom: 48px; scroll-margin-top: 24px; }
+    section h2 { font-size: 1.1rem; font-weight: 600; color: var(--green-dark); border-left: 4px solid var(--green-mid); padding-left: 12px; margin-bottom: 16px; }
+    section p { margin-bottom: 12px; }
+    section ul { padding-left: 20px; margin-bottom: 12px; }
+    section ul li { margin-bottom: 6px; }
+    .box { background: var(--green-pale); border-left: 4px solid var(--green-mid); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 16px 0; font-size: 0.9rem; color: var(--green-dark); }
+    .box-warn { background: #FFF8E8; border-left: 4px solid #BA7517; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 16px 0; font-size: 0.9rem; color: #633806; }
+    hr { border: none; border-top: 1px solid var(--green-light); margin: 40px 0; }
+    a { color: var(--green-mid); }
+    .meta { font-size: 0.8rem; color: #888780; text-align: center; }
+    footer { background: var(--green-dark); color: var(--green-light); text-align: center; padding: 32px 24px; font-size: 0.8rem; }
+    footer a { color: var(--green-light); }
+    @media (max-width: 600px) { header h1 { font-size: 1.5rem; } main { padding: 32px 16px 60px; } nav ol { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 29 Q8 21 8 15 Q8 7 16 4 Q24 7 24 15 Q24 21 16 29 Z" fill="white" opacity="0.95"/>
+      <path d="M12 16 L15 20 L21 11" stroke="#0F6E56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <h1>Carga <span>Clara</span></h1>
+  <p class="subtitle">Aviso de Privacidad / Privacy Policy &nbsp;·&nbsp; Vigente: 26 de marzo de 2025</p>
+</header>
+
+<nav>
+  <div class="toc-label">Contenido</div>
+  <ol>
+    <li><a href="#pp1">1. Responsable</a></li>
+    <li><a href="#pp2">2. Datos recabados</a></li>
+    <li><a href="#pp3">3. Finalidades</a></li>
+    <li><a href="#pp4">4. Sugerencias</a></li>
+    <li><a href="#pp5">5. Base legal</a></li>
+    <li><a href="#pp6">6. Transferencia</a></li>
+    <li><a href="#pp7">7. Conservación</a></li>
+    <li><a href="#pp8">8. Derechos ARCO</a></li>
+    <li><a href="#pp9">9. Seguridad</a></li>
+    <li><a href="#pp10">10. Cambios</a></li>
+    <li><a href="#pp11">11. Legislación</a></li>
+    <li><a href="#pp12">12. Contacto</a></li>
+  </ol>
+</nav>
+
+<div class="lang-bar">
+  <a class="lang-tab active" onclick="return switchLang('es',this)" href="#">🇲🇽 Español</a>
+  <a class="lang-tab" onclick="return switchLang('en',this)" href="#">🇺🇸 English</a>
+</div>
+
+<main>
+
+<!-- ═══════════════════════ ESPAÑOL ═══════════════════════ -->
+<div id="lang-es" class="lang-section active">
+
+  <section id="pp1">
+    <h2>1. Responsable del Tratamiento</h2>
+    <p><strong>Carga Clara</strong> ("la App", "nosotros") es una aplicación de control de combustible para flotas vehiculares. El titular del proyecto Carga Clara es el responsable del tratamiento de los datos personales recabados a través de la App.</p>
+    <div class="box"><strong>Contacto de privacidad:</strong> <a href="mailto:privacidad@cargaclara.mx">privacidad@cargaclara.mx</a></div>
+  </section>
+
+  <section id="pp2">
+    <h2>2. Datos Personales que Recabamos</h2>
+    <p>Recabamos las siguientes categorías de datos a través del uso de la App:</p>
+    <ul>
+      <li>Nombre completo, número de empleado y puesto</li>
+      <li>Ubicación GPS al momento de cada carga de combustible</li>
+      <li>Fotografías del odómetro (capturadas en tiempo real con sello de hora)</li>
+      <li>Fotografías del ticket de compra (capturadas en tiempo real con sello de hora)</li>
+      <li>Registros de carga: litros, precio unitario, monto total, fecha y hora</li>
+      <li>Datos de rendimiento vehicular: eficiencia km/litro por recorrido</li>
+      <li>Información del dispositivo: identificador, sistema operativo, versión de la App</li>
+      <li>Registros de uso: inicio de sesión y acciones dentro de la App</li>
+    </ul>
+  </section>
+
+  <section id="pp3">
+    <h2>3. Finalidades del Tratamiento</h2>
+    <p><strong>Finalidades primarias (necesarias para el servicio):</strong></p>
+    <ul>
+      <li>Control anti-fraude: validación cruzada de litros × precio vs. monto declarado</li>
+      <li>Monitoreo de rendimiento de flota: alertas de eficiencia km/litro</li>
+      <li>Generación de reportes estadísticos para administradores y dirección</li>
+      <li>Cumplimiento de obligaciones de auditoría interna y gobierno corporativo</li>
+    </ul>
+    <p><strong>Finalidades secundarias (sujetas a consentimiento):</strong></p>
+    <ul>
+      <li>Envío de comunicaciones promocionales de empresas relacionadas con el giro de flota, combustible y servicios vehiculares</li>
+      <li>Análisis estadístico agregado para mejorar la funcionalidad de la App</li>
+    </ul>
+    <div class="box-warn">
+      <strong>Aviso de uso comercial futuro:</strong> En el futuro podremos utilizar sus datos con fines comerciales, incluyendo el cobro por el uso de la App o la activación de funcionalidades de pago. Cualquier cambio será notificado con al menos <strong>30 días naturales</strong> de anticipación, dándole la oportunidad de oponerse antes de que entre en vigor.
+    </div>
+  </section>
+
+  <section id="pp4">
+    <h2>4. Sugerencias para Reportes</h2>
+    <p>Podremos invitarle a enviar comentarios o sugerencias sobre los reportes y tableros de la App. Toda sugerencia recibida:</p>
+    <ul>
+      <li>Será utilizada exclusivamente para mejorar la funcionalidad de la App</li>
+      <li>No será atribuida individualmente en comunicaciones públicas</li>
+      <li>Podrá incorporarse en versiones futuras sin contraprestación adicional</li>
+    </ul>
+  </section>
+
+  <section id="pp5">
+    <h2>5. Base Legal del Tratamiento</h2>
+    <p>El tratamiento de sus datos se realiza con base en la <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong> y su Reglamento:</p>
+    <ul>
+      <li><strong>Necesidad contractual:</strong> para proveer la funcionalidad principal de la App</li>
+      <li><strong>Interés legítimo:</strong> controles anti-fraude y monitoreo de flota</li>
+      <li><strong>Consentimiento:</strong> comunicaciones promocionales (revocable en cualquier momento)</li>
+      <li><strong>Obligación legal:</strong> cumplimiento de la legislación mexicana aplicable</li>
+    </ul>
+  </section>
+
+  <section id="pp6">
+    <h2>6. Transferencia de Datos</h2>
+    <p>Sus datos podrán ser compartidos con:</p>
+    <ul>
+      <li>Administradores de flota y personal designado de su organización</li>
+      <li>Proveedores de servicios tecnológicos bajo acuerdos de confidencialidad (infraestructura en la nube, análisis)</li>
+      <li>Empresas relacionadas con combustible y flota vehicular, para fines promocionales con su consentimiento previo</li>
+      <li>Autoridades gubernamentales cuando sea requerido por ley o mandato judicial</li>
+    </ul>
+    <p>No vendemos sus datos personales a terceros no relacionados.</p>
+  </section>
+
+  <section id="pp7">
+    <h2>7. Conservación de Datos</h2>
+    <ul>
+      <li><strong>Registros de carga y fotografías:</strong> 5 años, conforme a normatividad fiscal mexicana</li>
+      <li><strong>Registros de uso e información del dispositivo:</strong> 2 años desde la última actividad</li>
+      <li><strong>Preferencias de marketing y consentimientos:</strong> hasta revocación o solicitud de cancelación</li>
+    </ul>
+  </section>
+
+  <section id="pp8">
+    <h2>8. Derechos ARCO</h2>
+    <p>Conforme a la LFPDPPP, usted tiene derecho a:</p>
+    <ul>
+      <li><strong>Acceso:</strong> obtener confirmación y copia de sus datos personales</li>
+      <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos</li>
+      <li><strong>Cancelación:</strong> solicitar la eliminación de sus datos</li>
+      <li><strong>Oposición:</strong> oponerse al tratamiento con fines comerciales o promocionales</li>
+    </ul>
+    <div class="box">
+      Envíe su solicitud a <a href="mailto:privacidad@cargaclara.mx">privacidad@cargaclara.mx</a> indicando nombre completo, número de empleado, derecho que desea ejercer y copia de identificación oficial vigente. Responderemos en <strong>20 días hábiles</strong>.
+    </div>
+  </section>
+
+  <section id="pp9">
+    <h2>9. Medidas de Seguridad</h2>
+    <p>Implementamos medidas técnicas y organizativas adecuadas al riesgo: transmisión cifrada (TLS), controles de acceso basados en roles, registros de auditoría y almacenamiento seguro en la nube. En caso de brecha de seguridad que afecte sus derechos, le notificaremos conforme a la legislación aplicable.</p>
+  </section>
+
+  <section id="pp10">
+    <h2>10. Cambios al Aviso de Privacidad</h2>
+    <p>Podremos actualizar este Aviso en cualquier momento. Los cambios materiales — especialmente los que impliquen usos comerciales de sus datos — serán notificados con al menos <strong>30 días naturales</strong> de anticipación por correo electrónico o notificación en la App. El uso continuado tras la fecha de entrada en vigor constituye aceptación.</p>
+  </section>
+
+  <section id="pp11">
+    <h2>11. Legislación Aplicable</h2>
+    <p>Este Aviso se rige por la <strong>LFPDPPP</strong>, su Reglamento y los lineamientos del <strong>INAI</strong> (Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales). Cualquier controversia se somete a los tribunales competentes de la Ciudad de México o al INAI como autoridad supervisora.</p>
+  </section>
+
+  <section id="pp12">
+    <h2>12. Contacto</h2>
+    <div class="box">
+      <strong>Carga Clara</strong><br>
+      <a href="mailto:privacidad@cargaclara.mx">privacidad@cargaclara.mx</a>
+    </div>
+  </section>
+
+  <hr>
+  <p class="meta">Última actualización: 26 de marzo de 2025 · Versión 1.0</p>
+
+</div>
+
+<!-- ═══════════════════════ ENGLISH ═══════════════════════ -->
+<div id="lang-en" class="lang-section">
+
+  <section>
+    <h2>1. Data Controller</h2>
+    <p><strong>Carga Clara</strong> ("the App", "we") is a fleet fuel management application. The Carga Clara project owner is the data controller for personal data collected through the App.</p>
+    <div class="box"><strong>Privacy contact:</strong> <a href="mailto:privacidad@cargaclara.mx">privacidad@cargaclara.mx</a></div>
+  </section>
+
+  <section>
+    <h2>2. Data We Collect</h2>
+    <ul>
+      <li>Full name, employee ID, and job role</li>
+      <li>GPS location at the time of each fuel load</li>
+      <li>Odometer photographs (live, time-stamped)</li>
+      <li>Fuel receipt photographs (live, time-stamped)</li>
+      <li>Fuel load records: liters, unit price, total amount, date and time</li>
+      <li>Vehicle performance data: km/liter efficiency per trip</li>
+      <li>Device information: device ID, operating system, app version</li>
+      <li>Usage logs: login events and in-app actions</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Purpose of Processing</h2>
+    <p><strong>Primary purposes (required for the service):</strong></p>
+    <ul>
+      <li>Anti-fraud control: cross-validation of liters × price vs. declared total</li>
+      <li>Fleet performance monitoring: km/liter efficiency alerts</li>
+      <li>Statistical reporting for fleet administrators and management</li>
+      <li>Internal audit and corporate governance compliance</li>
+    </ul>
+    <p><strong>Secondary purposes (subject to consent):</strong></p>
+    <ul>
+      <li>Promotional communications from companies related to fleet management, fuel, and vehicle services</li>
+      <li>Aggregated statistical analysis to improve App functionality</li>
+    </ul>
+    <div class="box-warn">
+      <strong>Future commercial use notice:</strong> We may use your data for commercial purposes in the future, including charging for App usage or activating paid features. Any such change will be notified at least <strong>30 calendar days</strong> in advance, giving you the opportunity to object before it takes effect.
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Report Suggestions</h2>
+    <p>We may invite you to submit feedback on reports and dashboards. Suggestions will be used solely to improve App functionality, will not be publicly attributed to you, and may be incorporated into future versions without additional compensation.</p>
+  </section>
+
+  <section>
+    <h2>5. Legal Basis</h2>
+    <ul>
+      <li><strong>Contractual necessity:</strong> to provide the App's core functionality</li>
+      <li><strong>Legitimate interest:</strong> anti-fraud controls and fleet monitoring</li>
+      <li><strong>Consent:</strong> promotional communications (revocable at any time)</li>
+      <li><strong>Legal obligation:</strong> compliance with applicable Mexican law (LFPDPPP)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Data Sharing</h2>
+    <ul>
+      <li>Fleet administrators and designated personnel within your organization</li>
+      <li>Third-party technology providers under confidentiality agreements</li>
+      <li>Companies related to fuel and fleet services, for promotional purposes with your prior consent</li>
+      <li>Government authorities when required by law or court order</li>
+    </ul>
+    <p>We do not sell your personal data to unrelated third parties.</p>
+  </section>
+
+  <section>
+    <h2>7. Data Retention</h2>
+    <ul>
+      <li><strong>Fuel load records and photos:</strong> 5 years per Mexican fiscal regulations</li>
+      <li><strong>Usage logs and device data:</strong> 2 years from last activity</li>
+      <li><strong>Marketing preferences:</strong> until consent withdrawal or deletion request</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Your Rights (ARCO)</h2>
+    <p>Under the LFPDPPP you have the right to Access, Rectification, Cancellation, and Opposition regarding your personal data.</p>
+    <div class="box">
+      Submit requests to <a href="mailto:privacidad@cargaclara.mx">privacidad@cargaclara.mx</a> including your full name, employee ID, the right you wish to exercise, and a copy of valid ID. We will respond within <strong>20 business days</strong>.
+    </div>
+  </section>
+
+  <section>
+    <h2>9. Security</h2>
+    <p>We implement appropriate technical and organizational security measures including encrypted transmission (TLS), role-based access controls, audit logs, and secure cloud storage. In the event of a security breach affecting your rights, we will notify you as required by applicable law.</p>
+  </section>
+
+  <section>
+    <h2>10. Changes to This Policy</h2>
+    <p>Material changes — especially those involving commercial data uses — will be notified at least <strong>30 calendar days</strong> before taking effect via email or in-app notification. Continued use after the effective date constitutes acceptance.</p>
+  </section>
+
+  <section>
+    <h2>11. Governing Law</h2>
+    <p>This Privacy Policy is governed by the laws of the United Mexican States, specifically the LFPDPPP and guidelines issued by the INAI. Disputes shall be submitted to the competent courts of Mexico City or to the INAI as supervisory authority.</p>
+  </section>
+
+  <section>
+    <h2>12. Contact</h2>
+    <div class="box">
+      <strong>Carga Clara</strong><br>
+      <a href="mailto:privacidad@cargaclara.mx">privacidad@cargaclara.mx</a>
+    </div>
+  </section>
+
+  <hr>
+  <p class="meta">Last updated: March 26, 2025 · Version 1.0</p>
+
+</div>
+</main>
+
+<footer>
+  <p><strong>Carga Clara</strong> &nbsp;·&nbsp; <a href="mailto:privacidad@cargaclara.mx">privacidad@cargaclara.mx</a></p>
+  <p style="margin-top:8px; opacity:0.6;">© 2025 Carga Clara. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+function switchLang(lang, el) {
+  document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.lang-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('lang-' + lang).classList.add('active');
+  el.classList.add('active');
+  return false;
+}
+</script>
+</body>
+</html>
